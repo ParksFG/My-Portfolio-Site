@@ -16,19 +16,84 @@
         <p>My Portfolio Site</p>
         <!-- Navbar -->
         <nav>
-            <a href="#">About Me</a>
-            <a href="#">My Work</a>
-            <a href="#">Contact Me</a>
+            <a href="#About">About Me</a>
+            <a href="#Work">My Work</a>
+            <a href="#Contact">Contact Me</a>
      </nav>
     </header>
 
-<!-- Main Area -->
+<!-- Body Area -->
     <main>
-
+        <!-- Content Sections -->
+        <div class="content">
+            <section id="About" class="contentBoxes">
+                <div class="contentBoxesLabel">
+                    <h1>About Me.</h1>
+                </div>
+                <div class="contentBoxesImage">
+                    <img id="selfPortrait" src="./assets/images/selfPortarit.png" alt="self portrait">
+                </div>
+                <div class="contentBoxesText">
+                    <p>My name is Parker Gay and I've been working with computer since I was young.  I went to a video game development camp when I was 11 years old.  Since then I started a company with a friend I met in college.  My job was to develop websites for our clients.  Currently I am enrolled in the UT Coding Bootcamp to hone my skills to maximize my front-end and back-end skills.</p>
+                </div>
+            </section>
+            <section id="Work" class="contentBoxes">
+                <div class="contentBoxesLabel">
+                    <h1>My Work.</h1>
+                </div>
+                <div class="contentBoxesWork">
+                    <div class="workBox1" onclick="window.open('https://github.com/ParksFG/01-HTML-CSS-Refractor');">&nbsp;>
+                        <h3>
+                            Horiseon Refractor Code
+                        </h3>
+                    </div>
+                    <div class="workBox2" onclick="window.open('https://www.google.com/','mywindow');">&nbsp;>
+                        <h3>
+                            Placeholder #2
+                        </h3>
+                    </div>
+                    <div class="workBox3" onclick="window.open('https://www.google.com/','mywindow');">&nbsp;>
+                        <h3>
+                            Placeholder #3
+                        </h3>
+                    </div>
+                    <div class="workBox4" onclick="window.open('https://www.google.com/','mywindow');">&nbsp;>
+                        <h3>
+                            Placeholder #4
+                        </h3>
+                    </div>
+                    <div class="workBox5" onclick="window.open('https://www.google.com/','mywindow');">&nbsp;>
+                        <h3>
+                            Placeholder #5
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <section id="Contact" class="contentBoxes">
+                <div class="contentBoxesLabel">
+                    <h1>Contact Me</h1>
+                </div>
+                <div class="contentContact">
+                    <div  class ="contentBoxesContact">
+                        <a href="https://github.com/ParksFG">Github</a>
+                    </div>
+                    <div  class ="contentBoxesContact">
+                        <a href="https://www.linkedin.com/in/parker-gay-6360b3241/">Linkedin</a>
+                    </div>
+                    <div  class ="contentBoxesContact">
+                        <p>Phone: 407-505-9266</p>
+                    </div>
+                    <div  class ="contentBoxesContact">
+                        <p>Email: ParkerFGay@gmail.com</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 <!-- Footer Section -->
     <footer>
-        <!-- <a href="https://www.flaticon.com/free-icons/briefcase" title="briefcase icons">Briefcase icons created by Dimitry Miroliubov - Flaticon</a> -->
+        <a href="https://www.flaticon.com/free-icons/briefcase" title="briefcase icons">Briefcase icons created by Dimitry Miroliubov - Flaticon</a>
+        <p>Made by Parker Gay</p>
     </footer>
 
 </body>

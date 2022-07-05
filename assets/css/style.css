@@ -1,11 +1,14 @@
 /* Setting the Webpage Background */
 html {
     background-color: lightgray;
+    scroll-behavior: smooth;
 }
 
 /* Header */
 header{
     background-color: bisque;
+    border: solid purple;
+    border-width: 0px 0px 5px;
 }
 
 header h1,
@@ -37,27 +40,236 @@ nav a {
     color: white;
     padding: 10px;
     justify-content: center;
+    transition: background-color 250ms ease-in-out;
 }
+
+/* Visual Feedback for hovering */
+nav a:hover {
+    background-color: blue;
+}
+
+/* Content */
+
+main {
+    margin-top: 50px;
+}
+
+.contentBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0px;
+}
+
+/* Used in each flex row */
+.contentBoxesLabel {
+    display: flex;
+    flex: 0 0 200px;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px;
+    border-right: 5px solid purple;
+    border-radius: 15px;
+    text-align: end;
+}
+
+.contentBoxesLabel h1 {
+    display: inline;
+    margin-right: 15px;
+    font-size: 300%;
+}
+
+.contentBoxesImage {
+    display: flex;
+    flex: 1 0 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.contentBoxesText {
+    display: flex;
+    flex: 2 0 300px;
+    margin: 5px;
+    align-items: center;
+    font-size: 125%;
+}
+
+/* Spacing for text box */
+.contentBoxesText p {
+    margin: 15px;
+}
+
+#selfPortrait {
+    display: flex;
+    border-radius: 50px;
+    
+}
+
+.contentBoxesWork {
+    display: flex;
+    flex: 2 0 300px;
+    margin: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contentBoxesWork h3 {
+    color: white;
+    background-color: purple;
+    display: inline;
+    height: 30px;
+    padding: 10px;
+    margin: 10px 10px 10px -15px;
+    text-align: center;
+}
+
+/* Styling for all boxes */
+.workBox1,
+.workBox2,
+.workBox3,
+.workBox4,
+.workBox5{
+    border: 5px solid purple;
+    height: 100%;
+    width: 100%;
+    margin: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    transition: opacity 500ms;
+    opacity: 70%;
+}
+
+/* Acting as button + Animation */
+.workBox1:hover,
+.workBox2:hover,
+.workBox3:hover,
+.workBox4:hover,
+.workBox5:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+/* Make first project box larger */
+.workBox1 {
+    flex: 3 0 85%;
+    height: 400px;
+    background-image: url(../images/horiseonWebsite.jpg);
+}
+
+/* Will need to split up as I add more projects */
+.workBox2,
+.workBox3,
+.workBox4,
+.workBox5{
+    background-image: url(../images/placeholderImage.jpg);
+    flex: 1 0 300px;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+.contentContact {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 100px;
+    flex-wrap: wrap;
+}
+
+.contentBoxesContact {
+    display: flex;
+    flex: 1 0 175px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 15px;
+    opacity: 100%;
+    transition: opacity 500ms;
+    flex-wrap: wrap;
+}
+
+.contentBoxesContact:hover {
+    opacity: 75%;
+}
+
+/* Making sure everything acts a clickable link */
+.contentBoxesContact a,
+.contentBoxesContact p {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: bisque;
+    border-top: 5px solid purple;
+    height: 50px;
+    text-align: center;
+    margin: 0px;
+}
+
+footer a,
+footer p {
+    margin: 0px;
+    padding: 5px;
+}
+
 /* CSS for Phone screens */
 @media screen and (max-width: 768px) {
-    main,
-    nav {
+    nav,
+    .contentBoxes,
+    .contentContact {
       flex-direction: column;
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     nav a{
       margin: 5px 20px;
       width: 75%;
       align-self: center;
     }
-  }
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     header h1,
     header p{
       margin: auto;
       width: 75%;
       align-self: center;
     }
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .contentBoxesLabel{
+        justify-content: center;
+        border-bottom: 5px solid purple;
+        border-right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contentBoxesText,
+    .contentBoxesWork,
+    .contentContact{
+        border-bottom: 5px solid black;
+    }
+}
+
+/* Spaces Contacts Closer */
+@media screen and (max-width: 768px) {
+    .contentBoxesContact{
+        flex: 0 0 75px;
+    }
+}
+
+
+  
+
+
