@@ -1,0 +1,63 @@
+/* Setting the Webpage Background */
+html {
+    background-color: lightgray;
+}
+
+/* Header */
+header{
+    background-color: bisque;
+}
+
+header h1,
+header p {
+    padding: 10px;
+    margin: 0px 0px 0px 20px;
+    width: 200px;
+    text-align: center;
+}
+
+header p {
+    font-weight: bolder;
+    padding: 0px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    border-radius: 10px;
+    background-color: purple;
+    display: flex;
+    margin: -25px 20px 5px;
+    text-decoration: none;
+    color: black;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+}
+/* CSS for Phone screens */
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav a{
+      margin: 5px 20px;
+      width: 75%;
+      align-self: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    header h1,
+    header p{
+      margin: auto;
+      width: 75%;
+      align-self: center;
+    }
+  }
