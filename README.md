@@ -14,7 +14,7 @@ I developed this portfolio site to showcase projects that I have worked on, eith
 
 ## Usage
 
-Here is what the website looks like.  If you want to preview it click [HERE!]()
+Here is what the website looks like.  If you want to preview it click [HERE!](https://parksfg.github.io/My-Portfolio-Site/)
 
 ![website preview](/assets/images/portfolioSitePreview.jpg)
 
@@ -47,5 +47,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
