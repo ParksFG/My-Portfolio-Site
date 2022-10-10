@@ -157,7 +157,7 @@ main {
 .workBox1 {
     flex: 3 0 85%;
     height: 400px;
-    background-image: url(../images/breweryMasters.png);
+    background-image: url(../images/peaceOfMind.png);
     box-shadow: 10px 6px 3px black;
     background-size: contain;
     background-repeat: repeat;
@@ -165,13 +165,21 @@ main {
 
 /* Will need to split up as I add more projects */
 .workBox2 {
+    background-image: url(../images/breweryMasters.png);
+    flex: 1 0 300px;
+    flex-wrap: wrap;
+    height: 150px;
+    align-items:flex-end
+}
+
+.workBox3 {
     background-image: url(../images/horiseonWebsite.jpg);
     flex: 1 0 300px;
     flex-wrap: wrap;
     height: 150px;
     align-items:flex-end
 }
-.workBox3,
+
 .workBox4,
 .workBox5{
     background-image: url(../images/placeholderImage.jpg);
